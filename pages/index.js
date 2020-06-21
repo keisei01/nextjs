@@ -14,16 +14,16 @@ export default function Homepage({ posts }) {
 
   return (
     <>
-      <ul>
+      {/* <ul>
         {posts.map((post) => (
           <li key={post.id}>{post.title}</li>
         ))}
-      </ul>
+      </ul> */}
       <h1>Posts</h1>
     </>
   );
 }
-export async function getStaticProps() {
-  const result = await axios.get("http://localhost:3000/api/posts");
-  return { props: { posts: result.data } };
-}
+// export async function getStaticProps() {
+//   const result = await axios.get("http://localhost:3000/api/posts");
+//   return { props: { posts: result.data } };
+// }
